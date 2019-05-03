@@ -1,0 +1,16 @@
+logs/*
+node_modules/
+public/informes/*.pdf
+public/plantillas/*.pdf
+public/documentos/*.pdf
+public/externos/*.pdf
+public/apidoc/*.*
+public/documentos/*
+config/config.js
+src/config/config.development.js
+src/config/config.test.js
+src/config/config.production.js
+npm-debug.log
+*.env
+.jshintrc
+.vscode

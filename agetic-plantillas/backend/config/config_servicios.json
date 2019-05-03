@@ -1,0 +1,93 @@
+{
+  "control_personal": {
+    "datos":
+    [
+      {
+        "checkbox": {
+          "licencia": "checkbox-0",
+          "comision": "checkbox-1",
+          "vacaciones": "checkbox-2",
+          "otro": "checkbox-3"
+        },
+        "fecha": {
+          "fecha_inicio": "datepicker-0",
+          "fecha_fin": "datepicker-1"
+        },
+        "hora": {
+          "entrada": "input-0",
+          "salida": "input-1"
+        },
+        "motivo": "inputt-0",
+        "cite": "cite-0",
+        "fecha_creacion": "2017-09-26 11:24:00.000-04",
+        "datos_generales": "datosGenerales-0",
+        "justificacion": "select-0" 
+      },
+      {
+        "checkbox": {
+          "licencia": "checkbox-0",
+          "comision": "checkbox-1",
+          "vacaciones": "checkbox-2",
+          "otro": "checkbox-3"
+        },
+        "fecha": {
+          "fecha_inicio": "datepicker-0",
+          "fecha_fin": "datepicker-1"
+        },
+        "hora": {
+          "entrada": "input-0",
+          "salida": "input-1"
+        },
+        "motivo": "inputt-0",
+        "cite": "cite-0",
+        "fecha_creacion": "2017-09-26 10:24:00.000-04",
+        "datos_generales": "datosGenerales-0",
+        "justificacion": "select-0"
+      },
+      {
+        "checkbox": {
+          "licencia": "checkbox-0",
+          "comision": "checkbox-1",
+          "vacaciones": "checkbox-2",
+          "otro": "checkbox-3"
+        },
+        "fecha": {
+          "fecha_inicio": "datepicker-0",
+          "fecha_fin": "datepicker-1"
+        },
+        "hora": {
+          "entrada": "input-0",
+          "salida": "input-1"
+        },
+        "motivo": "inputt-0",
+        "cite": "cite-0",
+        "fecha_creacion": "2017-08-26 11:24:00.000-04",
+        "datos_generales": "datosGenerales-0",
+        "justificacion": "select-0"
+      },
+      {
+        "checkbox": {
+          "licencia": "checkbox-0",
+          "comision": "checkbox-1",
+          "vacaciones": "checkbox-2",
+          "otro": "checkbox-3"
+        },
+        "fecha": {
+          "fecha_inicio": "datepicker-0",
+          "fecha_fin": "datepicker-1"
+        },
+        "hora": {
+          "entrada": "input-0",
+          "salida": "input-1"
+        },
+        "motivo": "inputt-0",
+        "cite": "cite-0",
+        "fecha_creacion": "2017-07-26 11:24:00.000-04",
+        "datos_generales": "datosGenerales-0",
+        "justificacion": "select-0"
+      }      
+    ],
+    "url": "http://127.0.0.1:8000/servicios_externos/plantillas/",
+    "token": "inQPEmROuGyYVxL2iMA6STGhEhTBbZHp2wvQyBbtj4yPTcoyMW+D2lp5L9lxuRj7wY0dP5mDUfd2XHfzccRiqTFihOwNlALXhusk71zaIPgmyBD3AZABiMqnEfKUIkGNZuFTJ2SKZdoZEO6d7v4y+V5keMpqHEXeC+XbjlJ6Pzk="
+  }
+}

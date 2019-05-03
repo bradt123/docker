@@ -1,0 +1,16 @@
+------------------------------------plantillas-----------------------------------
+*observaciones para su correcta instalacion 
+
+plantilla-formly-backend
+
+plantilla-formly-frontend
+
+
+	*bowe install 
+		- bower ESUDO cannot be run with sudo 
+		//soluion bower install --allow-root
+		  a la preguntas agregar las de package.json del frontend 
+	*
+
+
+

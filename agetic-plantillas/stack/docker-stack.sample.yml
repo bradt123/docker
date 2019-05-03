@@ -1,0 +1,72 @@
+version: "3"
+
+services:
+  frontend:
+    image: 172.29.0.118/plantillas-frontend:20180906
+    environment:
+      BACKEND_URL: http://192.168.21.38:8001
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "5000:8000"
+  backend:
+    image: 172.29.0.118/plantillas-backend:20180906
+    environment:
+      NODE_ENV: production
+      DB_NOMBRE: plantillas
+      DB_USUARIO: plantillas
+      DB_PASSWORD: plantillas
+      DB_PUERTO: 5432
+      DB_HOST: backend_db
+      RUTA_ARCHIVOS_EXTERNOS: ./public/externos/
+      RUTA_DOCUMENTOS: ./public/documentos/
+      HOST_BACKEND: 0.0.0.0
+      HOST_FRONTEND: 0.0.0.0
+      DOCUMENTO_GET: "false"
+      IDENTIFICADOR_DIRECTOR: 2
+      IDENTIFICADOR_DIRECCION_UNIDAD: 2
+      CITE_DIGITOS: 5
+      CITE_GUIA: acme
+      CORREO_PUERTO: 25
+      CORREO_HOST: localhost
+      CORREO_REMITENTE: Nombre-del-Remitente
+      CORREO_ORIGEN: ejemplo@correo.gob.bo
+      CORREO_SECURE: "false"
+      CORREO_IGNORETLS: "false"
+      CORREO_TLS_RECHAZAR: "false"
+      NOTIFICACION_SMS_URL: http://192.168.1.2/sms
+      NOTIFICACION_SMS_TOKEN: sms-token
+      NOTIFICACION_CORREO_URL: http://192.168.1.2/correo
+      NOTIFICACION_CORREO_TOKEN: correo-token
+      LDAP_URL: ldaps://192.168.21.33:636
+      LDAP_BIND_DN: cn=admin,dc=entidad,dc=com
+      LDAP_PASSWORD: admin
+      LDAP_SEARCHBASE: ou=usuarios,dc=entidad,dc=com
+      JWT_SECRET: esta-cadena-tiene-que-ser-modificada-en-produccion
+      JWT_SESSION: "false"
+      JWT_TIEMPO: 60
+      BACKEND_PUERTO: 8000
+      FABRIC_URI: ws://127.0.0.1:3001
+      FABRIC_TOKEN: esta-cadena-tiene-que-ser-modificada-en-produccion
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    ports:
+       - "5001:8000"
+  backend_db:
+    image: postgres:9.4-alpine
+    environment:
+      POSTGRES_USER: plantillas
+      POSTGRES_PASSWORD: plantillas
+      POSTGRES_DB: plantillas
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - plantillas:/var/lib/postgresql/data
+volumes:
+  plantillas:
